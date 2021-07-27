@@ -9,7 +9,7 @@ def getdata():
     # print(var_1)
     # folder = os.listdir('/Users/brandonapol/Documents/coding_temple_rangers_63/this_is_the_end/final_flask_app/test.txt')
     # folder = os.path.join(folder, 'New Folder')
-    my_zip = shutil.make_archive('my_zip', 'zip', '../template')
+    my_zip = shutil.make_archive('my_zip', 'zip', 'my_app/template')
     # You need to go back and undo this!
     # #This works
     return send_file(my_zip, as_attachment=True)
